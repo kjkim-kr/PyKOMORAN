@@ -101,10 +101,10 @@ public class KomoranEntryPoint {
     public void initByModelName(String modelTypeName) {
         switch (modelTypeName) {
             case "STABLE":
-                komoran = new Komoran(DEFAULT_MODEL.LIGHT);
+                komoran = new Komoran(DEFAULT_MODEL.STABLE);
                 break;
             case "EXP":
-                komoran = new Komoran(DEFAULT_MODEL.FULL);
+                komoran = new Komoran(DEFAULT_MODEL.EXPERIMENT);
                 break;
             default:
                 // TODO: throw ModelNotFoundException
@@ -250,7 +250,7 @@ public class KomoranEntryPoint {
     public static void main(String[] args) {
         // Sample code for testing
         KomoranEntryPoint komoranEntryPoint = new KomoranEntryPoint();
-        komoranEntryPoint.initByModel(DEFAULT_MODEL.LIGHT);
+        komoranEntryPoint.initByModel(DEFAULT_MODEL.STABLE);
         komoranEntryPoint.analyze("① 대한민국은 민주공화국이다. ② 대한민국의 주권은 국민에게 있고, 모든 권력은 국민으로부터 나온다.");
         System.out.println(komoranEntryPoint.getTokenList());
 

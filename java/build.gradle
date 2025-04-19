@@ -14,8 +14,8 @@ repositories {
 
 dependencies {
     // add released
-//     compile 'com.github.shin285:KOMORAN:3.3.9'
+//     implementation 'com.github.shin285:KOMORAN:3.3.9'
     // add local file
-    compile name: 'KOMORAN-3.3.9'
-    compile 'net.sf.py4j:py4j:0.10.9.2'
+    implementation name: 'KOMORAN-3.3.9'
+    implementation 'net.sf.py4j:py4j:0.10.9.2'
 }
